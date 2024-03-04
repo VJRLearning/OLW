@@ -1,0 +1,8 @@
+    interface {{ rtr.lo.name}}
+      description {{ rtr.lo.description }}
+      ipv4 address {{ rtr.lo.ip }} {{ rtr.lo.mask }}
+
+    {% for gi in rtr.gis %}
+    interface {{ gi.name }}
+      description {{ gi.description }}
+      ipv4 address {{ gi.ip }} {{ gi.mask}}
