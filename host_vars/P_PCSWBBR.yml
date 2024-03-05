@@ -1,0 +1,7 @@
+---
+rtr: P_PCSWBBR
+    name: P_PCSWBBR
+    platform: xr
+    lo: { name: Loopback0, ip: 2.2.2.2, mask: 255.255.255.255, description: Loopback0 }
+    gis: 
+      - { name: GigabitEthernet0/0/0/1, ip: 
